@@ -1,0 +1,129 @@
+body{
+    font-family: verdana, arial, helvetica, sans-serif;
+    margin:0;
+    padding:0;
+}
+.clear{
+    clear:both;
+}
+#wrapper{
+    width:960px;
+    margin:0 auto;
+    -moz-box-shadow: 0 0 3px 1px #ddd;
+    -webkit-box-shadow: 0 0 3px 1px#ddd;
+    box-shadow: 0 0 3px 1px #ddd;
+}
+h1#carshare{
+    margin-top:0;
+    padding-top:10px;
+    padding-left:10px;
+}
+#column_right{
+    width:170px;
+    float:right;
+}
+#login_form{
+    padding:10px;
+    background-color: #999999;
+    background-image: -moz-linear-gradient(center top , #CCCCCC, #999999);
+}
+.suggest{
+    width:140px;
+    padding:10px;
+    top:25px;
+    position:absolute;
+    left:0;
+    z-index:2;
+    background:white;
+    display:none;
+}
+
+.suggest ul{
+    margin:0;
+    padding:0;
+}
+
+.suggest ul li{
+    margin-left:0;
+    list-style-type: none;
+}
+
+.input_wrapper{
+    width:140px;
+    float:left;
+    position:relative;
+    margin-right:10px;
+}
+
+#indexsearch{
+    background-color: #CCCCCC;
+    background-image: -moz-linear-gradient(center top , #EEEEEE, #CCCCCC);
+    padding:10px;
+    width:700px;
+}
+
+ul#trips_list{
+    margin:0;
+    padding:0;
+}
+
+#trips_list li{
+    padding:10px;
+    height:80px;
+    list-style-type: none;
+}
+
+.trip-driver{
+    width:200px;
+    float:left;
+    height:60px;
+    border-right:1px solid #ccc;
+    margin-right:10px;
+}
+
+#driver_box{
+    float:left;
+    width:200px; 
+}
+
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+/*Admin*/
+
+#admin_menu{
+    float:left;
+    width:150px;
+}
+
+#admin_menu ul{
+    margin:0;
+    padding:0;
+}
+#admin_menu ul li{
+    list-style-type: none;
+    font-size:10px;
+}
+
+#admin_content{
+    float:left;
+    width:540px;
+}
+
+#admin_content h2{
+    margin-top:0;
+    margin-bottom:0;
+    font-weight:normal;
+    fonts-size:14px;
+    border-bottom:1px dashed grey;
+}
+
+.add_box{
+    width:220px;
+    float:right;
+    
+}

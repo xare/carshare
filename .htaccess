@@ -1,0 +1,21 @@
+RewriteEngine on
+#RewriteCond $1 !^(index\.php|images|css|robots\.txt)
+#RewriteRule ^(.*)$ /index.php/$1 [L]
+
+# Ionize Rules
+
+# Keep these lines even in maintenance mode, to have an access to the website
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond $1 !^(index\.php|test.html|images|uploads|css|js|robots\.txt)
+
+RewriteRule ^(.*)$ index.php/$1
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(application|modules|plugins|system|themes) index.php/$1 [L]
