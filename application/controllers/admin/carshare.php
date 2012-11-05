@@ -37,8 +37,15 @@ class Carshare extends CI_Controller {
         $this->load->view('admin/cities_add', $this->data);
     }
     
+    public function car_add(){
+        $c = new Car();
+        $this->data['cars'] = $c->get();
+        
+        $this->load->view('admin/cars_add', $this->data);
+    }
+    
      /* FUNCTION CALLED FROM Admin's Add Category View */
-     public function add_category(){
+     public function add_area(){
         $this->load->library('form_validation');
         $this->load->helper('form');
         
@@ -53,7 +60,21 @@ class Carshare extends CI_Controller {
         
         $this->load->view('admin/area_add', $data);
     }
+    function add_car(){
+        $c = new Car();
+        $c->make = $this->input->post('make');
+        $c->model = $this->input->post('make');
+        $c->places = $this->input->post('places');
+        $c->user_id = $this->session->userdata('id_user');
+        $c->save();
+        $this->load->view('admin/cars_add', $this->data);
+    }
     
+    function edit_car($id){
+        $c = new Car();
+        $this->data['car'] = $c->get_by_id($id);
+        $this->load->view('admin/edit_car',$this->data);
+    }
     function edit_area($id){
         
         $data['id'] = $id;
