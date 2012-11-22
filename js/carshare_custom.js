@@ -3,7 +3,7 @@
                 /* The login form div is first fade out for half a second then the contents of users/invite are loaded into the same login form. This login form contains a login link.
                  * When this link is clicked a the load_login_form function is called, then login form is faded in again.*/
                 $("#login_form").fadeOut(500, function(){
-                        $("#login_form").load('users/invite',function(){
+                        $("#login_form").load(base_url+'users/invite',function(){
                                     $("#login_link").click(function(){
                                         load_login_form();
                                     });

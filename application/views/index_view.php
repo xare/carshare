@@ -1,8 +1,8 @@
 <?php
 /*The head view contains all the head tag. call to meta tags, title, css, js */
-    $this->load->view('head');
+    $this->load->view('includes/head');
 /*Top part of the page common to all pages*/
-    $this->load->view('header');  
+    $this->load->view('includes/header');  
 ?>
        
 <?php
@@ -83,10 +83,16 @@
         ?>
             <li>
                 <div class="trip-driver">
-                    <?php echo $trip['username']; ?><br />
                     <img src="uploads/<?php echo $trip['username']; ?>_thumb.jpg" />
+                    <span><?php echo $trip['username']; ?></span><br />
+                    
                 </div>
-                <div class="trip-info"><?php echo $trip['origin']; ?> - <?php echo $trip['destination']; ?> - <?php echo $trip['when']; ?></div>
+                <div class="trip-info">
+                <span class="trip_title"><?php echo $trip['origin']; ?> - <?php echo $trip['destination']; ?> - <?php echo $trip['when']; ?></span><br />
+                <strong>Number of Places:</strong> <?php echo $trip['places']; ?><br />
+                <strong>Luggage:</strong> <?php echo $trip['luggage']; ?><br />
+                </div>
+                
                 <div class="trip-actions"><?php if($logged_in == TRUE): ?><a href="trips/see_trip/<?php echo $trip['id']; ?>">See Trip</a><?php endif; ?></div>
             </li>
         <?php endforeach;
@@ -94,5 +100,5 @@
         ?>
 <!-- FOOTER BEGINS HERE -->
 <?php
-    $this->load->view('footer');  
+    $this->load->view('includes/footer');  
 ?>

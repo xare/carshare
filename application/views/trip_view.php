@@ -1,8 +1,8 @@
 <?php
 /*The head view contains all the head tag. call to meta tags, title, css, js */
-    $this->load->view('head');
+    $this->load->view('includes/head');
 /*Top part of the page common to all pages*/
-    $this->load->view('header');  
+    $this->load->view('includes/header');  
 ?>
 
 <div id="driver_box">
@@ -27,5 +27,5 @@ You have requested a place in this trip.
 <?php endif; ?>
 <!-- FOOTER BEGINS HERE -->
 <?php
-    $this->load->view('footer');  
+    $this->load->view('includes/footer');  
 ?>

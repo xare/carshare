@@ -52,7 +52,8 @@ class Home extends CI_Controller {
                 $this->pagination->initialize($config);
                 
                 //We obtain the trips from the database.
-                //$this->data['trips'] = $t->include_related('city',array('city_en','id'))->get($config['per_page'],$page);
+                //$this->data['trips'] = $t->include_related('city')->get($config['per_page'],$page);
+                                
                 $this->data['trips'] = $this->trips_model->get_trips($page,$config['per_page']);
                 //$this->trips_model->get_trips($page,$config['per_page']);
                 

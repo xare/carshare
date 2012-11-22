@@ -1,6 +1,6 @@
 <?php
-    $this->load->view('head');
-    $this->load->view('header');  
+    $this->load->view('includes/head');
+    $this->load->view('includes/header');  
 ?>
        
 <?php
@@ -62,5 +62,5 @@
         </ul>
     </div>
 <?php
-    $this->load->view('footer');  
+    $this->load->view('includes/footer');  
 ?>

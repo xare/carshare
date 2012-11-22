@@ -12,6 +12,7 @@ body{
     -moz-box-shadow: 0 0 3px 1px #ddd;
     -webkit-box-shadow: 0 0 3px 1px#ddd;
     box-shadow: 0 0 3px 1px #ddd;
+    margin-top:30px;
 }
 h1#carshare{
     margin-top:0;
@@ -80,6 +81,25 @@ ul#trips_list{
     border-right:1px solid #ccc;
     margin-right:10px;
 }
+.trip-driver span{
+    font-size:11px;
+    color:#777;
+}
+.trip-driver img{
+    float:left;
+    margin-right:5px;
+}
+.trip-info{
+ font-size:10px;   
+}
+.trip-info strong{
+    color:#888;
+}
+.trip_title{
+    font-size:12px;
+    font-weight:bold;
+    color:#666;
+}
 
 #driver_box{
     float:left;
@@ -126,4 +146,20 @@ ul#trips_list{
     width:220px;
     float:right;
     
+}
+
+#languages{
+    float:right;
+    width:140px;
+    margin-bottom:10px;
+}
+
+#languages a{
+    font-size:10px;
+    text-decoration:none;
+    color:#aaa;
+}
+
+#languages a:hover{
+    color:#666;
 }

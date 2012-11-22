@@ -2,7 +2,7 @@
 
 class Trips extends CI_Controller {
          var $data = array();
-    
+
         function __construct(){
             parent::__construct();
             $this->load->model('trips_model');

@@ -37,6 +37,8 @@
                     $data[$i]['destination'] = $this->get_cityname($row->destination_id);
                     $data[$i]['when'] = $row->when;
                     $data[$i]['id_driver'] = $row->id_driver;
+                    $data[$i]['places'] = $row->places;
+                    $data[$i]['luggage'] = $row->luggage;
                     $data[$i]['username'] = $this->users_model->get_username($row->id_driver);
                     $data[$i]['picture'] = $this->users_model->get_user_picture($row->id_driver);
                     $i++;

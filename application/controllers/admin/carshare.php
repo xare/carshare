@@ -13,6 +13,7 @@ class Carshare extends CI_Controller {
             $this->load->model('users_model');
             $this->load->model('locations_model');
             $this->load->model('trips_model');
+            $this->load->model('cars_model');
             
         $this->data['logged_in'] = $this->session->userdata('logged_in');
         $this->data['username'] = $this->session->userdata('username');
